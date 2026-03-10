@@ -2,39 +2,41 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday!</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1 class="page-title">Blow the Candle 🎂</h1>
+  <h1 class="page-title">Blow the Candle 🎂</h1>
 
-<div class="content">
+  <div class="content">
 
-<div class="webcam">
-<video id="webcam" autoplay playsinline></video>
-<canvas id="canvas"></canvas>
-</div>
+    <!-- Webcam area for hand detection -->
+    <div class="webcam">
+      <video id="webcam" autoplay playsinline></video>
+      <canvas id="canvas"></canvas>
+    </div>
 
-<div class="cake-area">
+    <!-- Cake and lighter -->
+    <div class="cake-area">
+      <!-- Use the unlit cake GIF -->
+      <img src="assets/cake_unlit.gif" class="cake" id="cake" alt="Unlit Birthday Cake">
 
-<img src="assets/cake_unlit.gif" class="cake" id="cake">
+      <!-- Lighter GIF -->
+      <img src="assets/lighter.gif" class="lighter" id="lighter" alt="Lighter">
+    </div>
 
-<img src="assets/lighter.gif" class="lighter" id="lighter">
+  </div>
 
-</div>
+  <!-- Mediapipe Hands library -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
 
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
-
-<script src="script.js"></script>
+  <!-- Your JS -->
+  <script src="script.js"></script>
 
 </body>
 
