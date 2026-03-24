@@ -94,7 +94,7 @@ if(isCakeLit)return
 
 isCakeLit=true
 
-cakeImg.src="assets/cake_lit.gif"
+cakeImg.src="cake_lit.gif"
 
 match.style.display="none"
 
