@@ -1,6 +1,6 @@
 const video = document.getElementById("webcam")
-const match = document.getElementById("match")
-const cakeImg = document.getElementById("cakeImg")
+const match = document.getElementById("lighter")
+const cakeImg = document.getElementById("cake")
 
 let handPosition = {x:0,y:0}
 let isHandDetected=false
